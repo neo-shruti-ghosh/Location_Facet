@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Facet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="dropdown" class="dropdown">
+        <!-- menu bar -->
+        <div class="location">
+            <span class="spanloc">Locations</span>
+            <button onclick="collapse()" id="coll" class="btn-1 collapse"><img src="assets/arrowmin.svg" alt=""
+                    srcset=""></button>
+            <button onclick="minimize()" id="mini" class="btn-1 minimize"><img src="assets/minimize.svg" alt=""
+                    srcset=""></button>
+            <button onclick="expand()" id="exp" class="btn-1 expand"><img src="assets/expand.svg" alt=""
+                    srcset=""></button>
+            <button onclick="uncollapse()" id="uncoll" class="btn-1 uncollapse"><img src="assets/uncollapse.svg" alt=""
+                    srcset=""></button>
+        </div>
+        <!-- dropdown menu -->
+        <div id="places" class="places">
+            <div id="not_scroll" class="not_scroll">
+                <!-- search inputs -->
+                <div class="input">
+                    <button class="btn-1 searchi"><img src="assets/search.svg" alt=""
+                            srcset=""></button>
+                    <input type="text" placeholder="Filter Locations" name="search" id="search">
+                </div>
+                <div class="buttons">
+                    <!-- check all button -->
+                    <button onclick="checkAll()" class="btn-2" id="checkall"> <img src="assets/check.svg" alt=""
+                            srcset="">Select All</button>
+                    <!-- clear button -->
+                    <button onclick="uncheck()" class="btn-2" id="clear"> <img src="assets/close.svg" alt=""
+                            srcset="">Clear All</button>
+                </div>
+                <!-- list of cities -->
+                <div class="search-results">
+                    <div class="form">
+                        <div class="result-list">
+                            <ul id="results">
+                            </ul>
+                        </div>
+                        <div class="applydiv">
+                            <input onclick="apply()" id="apply" class="apply" type="submit" value="APPLY FILTER">
+                        </div>
+                    </div>
+                    <div id="indexes" class="letter-indexes"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
