@@ -12,7 +12,7 @@
 The web app will run on the port assigned
 
 
-<h1>Features:-</h3>
+<h3>Features:-</h3>
 
 - Animated Dropdown
 - Alphabetical Indexing
